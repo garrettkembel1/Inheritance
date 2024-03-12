@@ -5,7 +5,7 @@ import f_animals as animals
 def main():
     # Create a Mammal object, a Dog object, and
     # a Cat object.
-    mammal = animals.Mammal('regular animal')
+    Bear = animals.Mammal('Bear')
     dog = animals.Dog()
     cat = animals.Cat()
 
@@ -14,8 +14,8 @@ def main():
     print('Here are some animals and')
     print('the sounds they make.')
     print('--------------------------')
-    mammal.show_species()
-    mammal.make_sound()
+    '''  Bear.show_species()
+    Bear.make_sound()
 
     print()
 
@@ -25,7 +25,28 @@ def main():
     print()
 
     cat.show_species()
-    cat.make_sound()
+    cat.make_sound() '''
+
+
+
+    show_mammal_info(Bear)
+    show_mammal_info(dog)
+    show_mammal_info(cat)
+    show_mammal_info('bird')
+
+
+def show_mammal_info(creature):
+    if isinstance(creature, animals.Mammal):
+        creature.show_species()
+        creature.make_sound()
+
+    else:
+        print(f'{creature} is not a Mammal object')
+        print(f'{creature} is not a {type(creature)} object')
+
+
+
+   
 
 # Call the main function.
 main()

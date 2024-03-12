@@ -11,6 +11,7 @@ class Plant:
 class Flower(Plant):
     def __init__(self,color, petals):
         Plant.__init__(self,color)
+        #must initialize superclass before supclass (color)
 
         self.__petals = petals
 

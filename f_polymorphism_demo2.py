@@ -5,7 +5,7 @@ import f_animals as animals
 def main():
     # Create an Mammal object, a Dog object, and
     # a Cat object.
-    mammal = animals.Mammal('regular animal')
+    mammal = animals.Mammal('Bear')
     dog = animals.Dog()
     cat = animals.Cat()
 
